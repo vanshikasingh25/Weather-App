@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="weather-app">
+        <div class="container">
+            <h1 class="brand">The Weather</h3>
+            <div>
+                <h1 class="temp">16</h1>
+                <div class="city-time">
+                    <h1 class="name">London</h1>
+                    <small>
+                        <span class="time">06:09</span>
+                        -
+                        <span class="date">Monday sep 13</span>
+                    </small>
+                </div>
+                <div class="weather">
+                    <img src="/images/day/kenrick-mills-1h2Pg97SXfA-unsplash.jpg" class="icon" width="50" height="50"
+                        alt="img">
+                    <span class="condition"></span>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <form action="" id="locationInput">
+                <input type="text" class="search" placeholder="search Location...">
+                <button type="submit" class="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <ul class="cities">
+                <li class="city">New York</li>
+                <li class="city">Cali</li>
+                <li class="city">Paris</li>
+                <li class="city">Tokyo</li>
+            </ul>
+            <ul>
+                <h4>Weather Details</h4>
+                <li>
+                    <span>Cloudy</span>
+                    <span class="cloud">98%</span>
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <span class="cloud">98%</span>
+                </li>
+                <li>
+                    <span>Wind</span>
+                    <span class="humidity">64%</span>
+                </li>
+                <li>
+                    <span>Cloudy</span>
+                    <span class="wind">8km/h</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
