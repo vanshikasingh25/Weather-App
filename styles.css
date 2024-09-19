@@ -15,7 +15,7 @@ h3 {
 
 .weather-app {
     min-height: 100vh;
-    background-image: url(./images/day/kenrick-mills-1h2Pg97SXfA-unsplash.jpg);
+    background-image: url('./images/day/sajad-nori-suuKCJBdQ_Q-unsplash.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,6 +23,7 @@ h3 {
     position: relative;
     transition: 500ms;
     opacity: 1;
+    /* display: flex; */
 }
 
 .weather-app::before {
@@ -52,8 +53,8 @@ h3 {
 
 .container>div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 
@@ -61,6 +62,11 @@ h3 {
 .temp,
 .weather {
     margin: 0 1em;
+}
+
+.weather {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -79,6 +85,13 @@ h3 {
     display: block;
     margin: 0.5em 0;
 }
+
+.icon-condition {
+    display: flex;
+    align-items: center;
+}
+
+
 
 
 .panel {
@@ -162,6 +175,46 @@ h3 {
 }
 
 
+
+
+.forecast {
+    margin-top: 2em;
+    color: #ccc;
+    /* background-color: red; */
+    align-items: start;
+}
+
+.forecast-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+
+}
+
+.day {
+    text-align: center;
+}
+
+.day-name {
+    font-size: 1.2em;
+}
+
+.forecast-temp {
+    font-size: 1.5em;
+}
+
+.forecast-icon {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
 @media screen and (max-width: 800px) {
 
     .panel,
@@ -183,3 +236,11 @@ h3 {
         min-height: 40em;
     }
 }
+
+
+
+/* .container{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+} */
